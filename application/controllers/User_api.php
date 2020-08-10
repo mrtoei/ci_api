@@ -162,75 +162,7 @@ class User_api extends API_Controller {
 	 * 
 	 */
 	
+	
 
 
-
-	public function selectCustomer(){
-		header('Content-type: application/json');
-		$json = json_decode(file_get_contents('php://input'));
-		$data = [
-			'A','B','C','D'
-		];
-		echo json_encode($data);
-	}
-	public function selectVM(){
-		// $data = array(
-		// 	array(
-		// 		"datetime"=>'01.06.2020 14:00:00 - 14:15:00',
-		// 		"Toatal"=>12.6667
-		// 	),
-		// 	array(
-		// 		"datetime"=>'01.06.2020 14:15:00 - 14:30:00',
-		// 		"Toatal"=>15.8
-		// 	),
-		// 	array(
-		// 		"datetime"=>'01.06.2020 14:30:00 - 15:00:00',
-		// 		"Toatal"=>16.3333
-		// 	),
-		// 	array(
-		// 		"datetime"=>'01.06.2020 14:45:00 - 15:15:00',
-		// 		"Toatal"=>25.3333
-		// 	)
-
-		// );
-		$data = [
-			'1','2','3','4'
-		];
-		echo json_encode($data);
-	}
-	public function selectVM2(){
-		$data_2 = array(
-			array(
-				"datetime"=>'01.06.2020 14:00:00 - 14:15:00',
-				"Toatal"=>12.6667
-			),
-			array(
-				"datetime"=>'01.06.2020 14:15:00 - 14:30:00',
-				"Toatal"=>15.8
-			),
-			array(
-				"datetime"=>'01.06.2020 14:30:00 - 15:00:00',
-				"Toatal"=>16.3333
-			),
-			array(
-				"datetime"=>'01.06.2020 14:45:00 - 15:15:00',
-				"Toatal"=>25.3333
-			)
-
-		);
-
-		$data_1 = array(
-			'name'=>'CPU Load',
-			'sensor_id'=>2092,
-			'avg'=>10.62709638888889,
-			'max'=>69.1333,
-			'min'=>0,
-			'raw_data'=>$data_2
-		);
-
-		$data =  array(
-			'cpu_data'=>$data_1
-		);
-		echo json_encode($data);
-	}
 }
