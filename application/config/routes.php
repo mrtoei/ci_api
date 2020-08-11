@@ -64,4 +64,6 @@ $route['api/v1/user/login'] = 'User_api/login';
 $route['api/v1/user/view'] = 'User_api/view';
 
 $route['api/v1/product'] = 'Product/index';
+$route['api/v1/product/add'] = 'Product/insertProduct';
+$route['api/v1/product/delete/:num'] = 'Product/deleteProduct';
 
